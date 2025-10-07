@@ -1,0 +1,93 @@
+<!--Example HTML Sheet-->
+<!-- Comments (shown in green in many editors) are ignored by the browser. They
+start with the text “less-than sign, exclamation mark, two hyphens” and end with
+“two hyphens, greater-than sign”. They’re typically used to leave notes or
+instructions for developers. In this lesson, I’ll use them to share information
+about the document. -->
+
+<!--HyperText Markup Language -->
+<!--The underlying structure of our web pages-->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head tags are for metadata data about data, the main thing to pay
+  attention to here for now is the css link -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- This tells the browser what charset to use if your curious about
+     charsets more info can be found here
+     https://www.w3schools.com/html/html_charset.asp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This handles the scale and size of our document on different screen
+    sizes.-->
+    <link rel="stylesheet" href="style.css" />
+    <!--This is how we import syling to our html. It loads after the html doc
+    and applies css styling to the essisting elements-->
+    <title>Sandra</title>
+    <!-- This title shows up on the browser tag and as the headline for search
+    engine -->
+  </head>
+  <body>
+    <header>
+      <h1>Dossier: Sandra</h1>
+    </header>
+
+   <nav>
+    <a href="#bio">Biography</a> |
+    <a href="#hobbies">Hobbies</a> | 
+    <a href="#images">Images</a> 
+   </nav>
+
+   <article>
+    <h3 class="menu-heading" id="bio">Biography</h2>
+    <p>
+      Another midwest transplant thriving in Seattle. She earned a BA in Math in
+      2015 at UW, and has run her own math tutoring business for the last 10
+      years. She's hoping to combine her current math and education skills with 
+      her new coding skills to pursue a new career. She has a handsome and
+      charismatic tortoise named Col. Mustard. 
+    </p>
+   </article>
+
+   <article>
+    <h3 class="menu-heading" id="hobbies">Hobbies</h2>
+      <p>
+        She likes many activities:
+      </p>
+      <ul>
+        <li>Games of all kinds</li>
+        <li>Archery</li>
+        <li>Cooking and Baking</li>
+        <li>Throwing LAN parties</li>
+        <li>Reading</li>
+        <li>Fitness</li>
+        <li>Taking care of Col. Mustard</li>
+        <li>Just started practicing drawing</li>
+      </ul>
+   </article>
+
+    <article>
+      <h3 class="menu-heading" id="images">Images</h2>
+      <figure>
+        <img src="img/sandraarchery.jpg" alt="Image of Sandra with an archery
+        target" width="300"/>
+        <figcaption>
+        A precise archer!
+        </figcaption>
+      </figure>
+    </article>
+
+    <article>
+      <figure>
+        <img src="img/colmustard.jpeg" alt="Picture of the tortoise, Colonel
+        Mustard" width="300"/>
+        <figcaption>
+          Tortoise Col. Mustard. He's perfect!
+        </figcaption>
+      </figure>
+   </article>
+
+   <footer>
+    Created on <a href="https://www.epochconverter.com/" id="epoch">1759792878</a>.
+   </footer>
+  </body>
+</html>
